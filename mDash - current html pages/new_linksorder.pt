@@ -1,0 +1,38 @@
+<div metal:use-macro="view.layout">
+    <div metal:fill-slot="main_content" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+        <div class="container">
+            <div class="row upcoming">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h1>This will be an Order Form for Links</h1>
+
+                    <div>Order some links through this order form</div>
+
+                    <form class="standard-form" action="" method="POST">
+                        <input name="item_quantity" required type="number" value=""
+                               placeholder="Enter the amount of items"  class="form-control">
+                        <input name="item" required type="text" value=""
+                               placeholder="Please copy and paste title of Amazon product"  class="form-control">
+                        <input name="item_price" required type="text" value=""
+                               placeholder=" price (in USD) of the Amazon item"  class="form-control">
+                        <!--?This needs checks to be a float type-->
+                        <input name="order_url" required type="text" value=""
+                               placeholder="please paste the url of the Amazon item you want" class="form-control">
+
+                        <button type="submit" class="btn btn--secondary" style="margin-bottom: 20px; margin-left: 0;">Next</button>
+                    </form>
+                    <br>
+
+
+
+                    <a href="/account/index">Go back to account</a>
+                    <br><br><br>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+    </div>
+</div>

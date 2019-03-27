@@ -1,0 +1,77 @@
+<div metal:use-macro="view.layout">
+    <div metal:fill-slot="main_content">
+
+
+        <div class="container albums-page">
+            <div class="row upcoming">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+
+
+                    <h1>Outstanding Order Links</h1>
+
+
+                    <div>
+                        <br>Order: ${order_id} <a href="/account"
+                                                  class="btn btn-x-small btn--secondary"
+                                                  style="margin-bottom: 10px; margin-left: 0;">Back to Account Page</a>
+                        <br>Order item url: ${order_url}
+                        <br>Item: ${item}
+                        <br>Total: ${total_links}
+                        <br>Claimed Items: ${claimed_items} <a tal:condition="confirmed_clients"
+                            href="/links/client_list/${order_id}" target="_blank">Client List</a>
+                        <br>Used: ${used_links}
+                        <br>Total_items_left: ${total_links-used_links}
+                        <br>Link to item: <a class="btn btn--green-light"
+                                             style="margin-bottom: 20px; margin-left: 0;"
+                                             href="/links/link_landpage/${order_id}"
+                                             target="_blank">${landpage_url}</a>
+                        <br>(you can share this page with those who should redeem the gift --> NEED TO change to
+                        tiny URL)
+                        <br>Personalized message for this gift (maximum 600 characters):
+                        <br>
+                        <pre tal:condition="personalized_message">${personalized_message}</pre>
+                        <form action="/links/update_personalized_message/${order_id}" method="POST">
+
+                            <br><textarea name="personalized_message" rows="5"
+                                          placeholder="Write a personal message you wish those redeeming this gift to see"
+                                          class="form-control"></textarea>
+                            <button type="submit" class="btn btn--secondary"
+                                    style="margin-bottom: 20px; margin-left: 0;" onclick="">Update Personal Message
+                            </button>
+                        </form>
+
+                        <br>
+                        <br>Redeem code has been set? <a href="/links/set_redeem_code/${order_id}"
+                                                         class="btn btn--secondary"
+                                                         style="margin-bottom: 20px; margin-left: 0;"
+                    >Set Redeem Code</a>
+                        <div tal:condition="redeem_code">True</div>
+                        <div tal:condition="not redeem_code">False</div>
+
+                        <br>
+                        <br>Have restricted emails been set? <a href="/links/set_restricted_emails/${order_id}"
+                                                                class="btn btn--secondary"
+                                                                style="margin-bottom: 20px; margin-left: 0;"
+                    >Set Restricted emails</a>
+
+                        <div tal:condition="restricted_emails">True</div>
+                        <div tal:condition="not restricted_emails">False</div>
+                        <br>(These are e-mails pre-set that can redeem items from the link)
+                        <br>
+                        <br>
+                        <br>
+
+                    </div>
+
+                    <br>
+
+                    <br>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

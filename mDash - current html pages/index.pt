@@ -1,0 +1,402 @@
+<div metal:use-macro="view.layout">
+    <div metal:fill-slot="main_content" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <!-- Header -->
+
+        <div class="content-wrapper">
+
+            <!-- Main Slider -->
+
+            <div class="crumina-module crumina-module-slider container-full-width">
+                <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade">
+
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide bg-1 main-slider-bg-light">
+
+                            <div class="container">
+                                <div class="row table-cell">
+
+                                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12">
+
+                                        <div class="slider-content align-center">
+
+                                            <h1 class="slider-content-title with-decoration"
+                                                data-swiper-parallax="-100">
+                                                mDash harnesses AI to multiply e-Commerce
+
+                                                <svg class="first-decoration utouch-icon utouch-icon-arrow-left">
+                                                    <use xlink:href="#utouch-icon-arrow-left"></use>
+                                                </svg>
+
+                                                <svg class="second-decoration utouch-icon utouch-icon-arrow-left">
+                                                    <use xlink:href="#utouch-icon-arrow-left"></use>
+                                                </svg>
+
+                                            </h1>
+                                            <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                                Buy a gift now and send the
+                                                LINK to ANYONE, ANYWHERE! Are you wanting to send rewards or gifts
+                                                to your clients, employees, friends or provide give aways?
+                                                It's now as easy as sending a link and
+                                                let Amazon do the rest!
+                                            </h6>
+
+                                            <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                                <a href="/home/about/" class="btn btn--yellow btn--with-shadow">
+                                                    Learn More
+                                                </a>
+
+                                                <a href="/account/register" tal:condition="not view.logged_in_user_id"
+                                                   class="btn btn-border btn--with-shadow c-primary">
+                                                    Register Now
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="slider-thumb" data-swiper-parallax="-400"
+                                             data-swiper-parallax-duration="600">
+                                            <img src="/static/img_bs/slides1.png" alt="slider">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide bg-2 main-slider-bg-light">
+
+                            <div class="container table">
+                                <div class="row table-cell">
+
+                                    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="slider-content align-both">
+                                            <h2 class="slider-content-title" data-swiper-parallax="-100">
+                                                <span class="c-primary">mDash</span>
+                                                is quality product that will make your life better
+                                            </h2>
+                                            <h6 class="slider-content-text" data-swiper-parallax="-200">Lorem ipsum
+                                                dolor sit amet,
+                                                consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                                laoreet dolore
+                                                magna aliquam erat volutpat.
+                                            </h6>
+
+                                            <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                                <a href="#" class="btn btn-market btn--with-shadow">
+                                                    <svg class="utouch-icon utouch-icon-apple-logotype-1">
+                                                        <use xlink:href="#utouch-icon-apple-logotype-1"></use>
+                                                    </svg>
+                                                    <div class="text">
+                                                        <span class="sup-title">Download on the</span>
+                                                        <span class="title">App Store</span>
+                                                    </div>
+                                                </a>
+
+                                                <a href="#" class="btn btn-market btn--with-shadow">
+                                                    <img class="utouch-icon" src="/static/svg-icons/google-play.svg"
+                                                         alt="google">
+                                                    <div class="text">
+                                                        <span class="sup-title">Download on the</span>
+                                                        <span class="title">Google Play</span>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide thumb-left bg-3 main-slider-bg-light">
+
+                            <div class="container table full-height">
+                                <div class="row table-cell">
+                                    <div class="col-lg-6 col-sm-12 table-cell">
+
+                                        <div class="slider-content align-both">
+
+                                            <h2 class="slider-content-title" data-swiper-parallax="-100">Rise Up With
+                                                the Most Interesting App</h2>
+
+                                            <h6 class="slider-content-text" data-swiper-parallax="-200">Lorem ipsum
+                                                dolor sit amet,
+                                                consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                                laoreet
+                                                dolore magna aliquam erat volutpat.
+                                            </h6>
+
+                                            <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                                <a href="/account/signin" class="btn btn--lime btn--with-shadow">
+                                                    Login Now!
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-6 col-sm-12 table-cell">
+                                        <div class="slider-thumb" data-swiper-parallax="-300"
+                                             data-swiper-parallax-duration="500">
+                                            <img src="/static/img_bs/slides2.png" alt="slider">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Prev next buttons-->
+
+                    <div class="btn-prev with-bg">
+                        <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
+                            <use xlink:href="#utouch-icon-arrow-left-1"></use>
+                        </svg>
+                        <svg class="utouch-icon utouch-icon-arrow-left1">
+                            <use xlink:href="#utouch-icon-arrow-left1"></use>
+                        </svg>
+                    </div>
+
+                    <div class="btn-next with-bg">
+                        <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                            <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                        </svg>
+                        <svg class="utouch-icon utouch-icon-arrow-right1">
+                            <use xlink:href="#utouch-icon-arrow-right1"></use>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ... end Main Slider -->
+
+            <!-- Page Content -->
+
+            <!-- Info Boxes -->
+
+            <section class="medium-padding100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="crumina-module crumina-info-box info-box--standard-hover">
+
+                                <div class="info-box-image">
+                                    <img class="utouch-icon" src="/static/svg-icons/smartphone.svg" alt="smartphone">
+                                    <img class="cloud" src="/static/img_bs/clouds8.png" alt="cloud">
+                                </div>
+
+                                <div class="info-box-content">
+                                    <a href="#" class="h5 info-box-title">1. Choose the Product</a>
+                                    <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                        sed diam nonummy
+                                        nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                                    </p>
+                                </div>
+
+                                <a href="#" class="btn-next">
+                                    <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                        <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                    </svg>
+                                    <svg class="utouch-icon utouch-icon-arrow-right1">
+                                        <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="crumina-module crumina-info-box info-box--standard-hover">
+
+                                <div class="info-box-image">
+                                    <img class="utouch-icon" src="/static/svg-icons/music%20(1).svg" alt="smartphone">
+                                    <img class="cloud" src="/static/img_bs/clouds9.png" alt="cloud">
+                                </div>
+
+                                <div class="info-box-content">
+                                    <a href="#" class="h5 info-box-title">2. mDash digitizes the item</a>
+                                    <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                        sed diam nonummy
+                                        nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                                    </p>
+                                </div>
+
+                                <a href="#" class="btn-next">
+                                    <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                        <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                    </svg>
+                                    <svg class="utouch-icon utouch-icon-arrow-right1">
+                                        <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="crumina-module crumina-info-box info-box--standard-hover">
+
+                                <div class="info-box-image">
+                                    <img class="utouch-icon" src="/static/svg-icons/settings%20(4).svg" alt="smartphone">
+                                    <img class="cloud" src="/static/img_bs/clouds10.png" alt="cloud">
+                                </div>
+
+                                <div class="info-box-content">
+                                    <a href="#" class="h5 info-box-title">3. Amazon carries out the fulfillment</a>
+                                    <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                        sed diam nonummy
+                                        nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                                    </p>
+                                </div>
+
+                                <a href="#" class="btn-next">
+                                    <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                        <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                    </svg>
+                                    <svg class="utouch-icon utouch-icon-arrow-right1">
+                                        <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ... end Info Boxes -->
+
+
+            <!-- Counters -->
+
+            <section class="bg-secondary-color background-contain bg-10">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="counters">
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                                <div class="crumina-module crumina-counter-item">
+                                    <div class="counter-numbers counter c-yellow">
+                                        <span data-speed="2000" data-refresh-interval="3" data-to="6237" data-from="2">6237</span>
+                                    </div>
+                                    <h5 class="counter-title">Line of codes</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                                <div class="crumina-module crumina-counter-item">
+                                    <div class="counter-numbers counter c-yellow">
+                                        <span data-speed="2000" data-refresh-interval="3" data-to="4000" data-from="2">4000</span>
+                                    </div>
+                                    <h5 class="counter-title">Solutions</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                                <div class="crumina-module crumina-counter-item">
+                                    <div class="counter-numbers counter c-yellow">
+                                        <span data-speed="2000" data-refresh-interval="3" data-to="3"
+                                              data-from="2">3</span>
+                                        <div class="units">M+</div>
+                                    </div>
+                                    <h5 class="counter-title">Active users</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                                <div class="crumina-module crumina-counter-item">
+                                    <div class="counter-numbers counter c-yellow">
+                                        <span data-speed="2000" data-refresh-interval="3" data-to="8"
+                                              data-from="2">8</span>
+                                        <div class="units">M+</div>
+                                    </div>
+                                    <h5 class="counter-title">Download</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                <h5 class="c-white">mDash is being used across the world!</h5>
+                                <p class="c-semitransparent-white">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                    elit, sed diam nonummy euismod.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ... end  Counters -->
+
+            <!-- Subscribe Form -->
+
+            <section class="bg-primary-color background-contain bg-14 crumina-module crumina-module-subscribe-form">
+                <div class="container">
+                    <div class="row">
+                        <div class="subscribe-form">
+                            <div class="subscribe-main-content">
+                                <img class="subscribe-img" src="static/img_bs/subscribe-img.png" alt="image">
+
+                                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="crumina-module crumina-heading">
+                                        <h2 class="heading-title">Subscribe now!</h2>
+                                        <p class="heading-text">Learn more and grow with us as we roll out new product
+                                            features
+                                        </p>
+                                    </div>
+
+                                    <form class="form-inline subscribe-form-js" method="post"
+                                          action="/newsletter/add_subscriber">
+                                        <input name="email" placeholder="Enter your email address" type="email">
+                                        <button class="btn btn--green-light">
+                                            Subscribe
+                                        </button>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="subscribe-layer"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- End Subscribe Form -->
+
+            <section class="background-cover bg-blue-lighteen bg-12 align-center medium-padding120">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12">
+                            <div class="crumina-module crumina-heading">
+                                <h2 class="heading-title">Register for <span class="c-primary">mDash</span> Now!</h2>
+                                <p>Limited promotion: Register now and get 50 free links for a limited period ONLY!</p>
+                            </div>
+
+                            <a href="/account/register" class="btn btn-market btn--with-shadow">
+
+                                <div class="text">
+                                    <span class="sup-title">Register for</span>
+                                    <span class="title">mDash NOW</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+<div metal:fill-slot="additional_css">
+    <link href="/static/css/home.css?cacheId=${view.build_cache_id('/static/css/home.css')}" rel="stylesheet">
+</div>
+</div>

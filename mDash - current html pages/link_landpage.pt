@@ -1,0 +1,49 @@
+<div metal:use-macro="view.layout">
+    <div metal:fill-slot="main_content">
+
+
+        <div class="container">
+            <div class="row upcoming">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h1>Congratulations!</h1>
+
+                    <div>
+                        This page should have no footer or header, company logo, perhaps a white background
+                        <br>
+                        -> look elegant<br>
+                        -> change if this is restricted e-mail link / redeem code
+                        <h3>You have been gifted a ${item} from ${name}</h3>
+                        <br>
+                        <br>
+                        <pre tal:condition="personalized_message">${personalized_message}<br></pre>
+                        <br>
+                        <br>Learn more about your item here: <a href="http://${order_url}" target="_blank">${order_url}</a>
+
+                    </div>
+                    <div>Please enter the below to redeem your gift!</div>
+                    <div class="error-msg" tal:condition="error">
+                        ${error}</div>
+                    <form class="standard-form" action="/links/claim_gift/${order_id}" method="POST">
+                        <input name="client_name" required type="text" value=""
+                               placeholder="Please enter your full name"  class="form-control">
+                        <input name="client_telephone" type="text" value=""
+                               placeholder="Please enter your phone number (optional)"  class="form-control">
+                        <input name="client_email" required type="email" value=""
+                               placeholder="Please enter your e-mail"  class="form-control">
+                        <div>* This could be a restricted e-mail, so make sure you're on the list</div>
+                        <input tal:condition="redeem_code" name="client_redeem_code" required type="text"
+                                                           value="${client_redeem_code}"
+                               placeholder="Enter the Redeem Code"  class="form-control">
+                        <br> Need to put a 2FA or anti-bot thing here!
+                        <button type="submit" class="btn btn--secondary" style="margin-bottom: 20px; margin-left: 0;" onclick="">Claim Gift</button>
+                        <br>Pressing this button will send an e-mail with the link to redeem your Amazon gift!<br>
+                    </form>
+
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
