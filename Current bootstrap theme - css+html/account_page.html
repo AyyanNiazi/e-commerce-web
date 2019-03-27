@@ -132,9 +132,9 @@
         </header>
 
   <main style="margin-top: 16vw " >
-      <section style="margin-top: 10vw" > 
-          <div class="conatiner col-lg-12 ">
-            <div class='col-lg-5'  style="border: 1px solid black; margin: 1vw;margin-bottom: 10vw;margin-left: 3vw; border-bottom: 1px solid black" > 
+      <section style="margin-top: 10vw" class="col-lg-12"> 
+          <div class="conatiner ">
+            <div class='col-lg-5'  style="border: 1px solid black; ;margin-bottom: 10vw;margin-left: 1vw;margin-right: 1vw; border-bottom: 1px solid black" > 
             <div class=''style=" " >
               <nav class="nav col-sm-10" style="float: left; "  >
                 <li class="nav-link" href="#" tabindex="-1" aria-disabled="true">Profile</li>
@@ -142,8 +142,8 @@
               <button type="button" class="btn btn-info col-sm-2" style="left: 0;" >update</button>    
             </div>
         
-            <div class='col-lg-12' style="border-top: 1px solid black" >
-                <div class='col-lg-6 col-sm-6' style="padding-top: 3vw" >
+            <div class='container col-lg-10' style="border-top: 1px solid black;" >
+                <div class='col-lg-6 col-sm-6' style="padding-top: 3vw; float: left" >
                     <p>Name:</p>
                     <p>Company:</p>
                     <p>Telephone:</p>
@@ -152,7 +152,7 @@
                     
                   </div>
             
-                  <div class='col-lg-6 col-sm-6' style="padding-top: 3vw" >
+                  <div class='col-lg-6 col-sm-6' style="padding-top: 3vw; float: right" >
                      <p>(Name):</p>
                     <p>(Company):</p>
                     <p>(Telephone):</p>
@@ -167,7 +167,7 @@
           <div class='col-lg-2' ></div>
           
           <!-- 2nd part sath wala-->
-                <div class='col-lg-5'  style="border: 1px solid black; margin: 1vw;margin-bottom: 10vw;margin-left: 2vw  " > 
+                <div class='col-lg-5'  style="border: 1px solid black;margin-bottom: 10vw;margin-left: 1vw  " > 
                 <div class=''style=" " >
                   <nav class="nav col-sm-10" style="float: left; "  >
                     <li class="nav-link" href="#" tabindex="-1" aria-disabled="true">Outstanding compain</li>
@@ -175,8 +175,8 @@
                   <!-- <button type="button" class="btn btn-info col-sm-2 " style="left: 0px;" >Back to Account</button>     -->
                 </div>
             
-                <div class='col-lg-12' style="border-top: 1px solid black"  >
-                    <div class=' col-lg-6 ' style="padding-top: 3vw" >
+                <div class='col-lg-12' style="border-top: 1px solid black;"  >
+                    <div class='col-lg-6 col-sm-6' style="padding-top: 3vw; float: left" >
                         <p>Name:</p>
                         <p>Company:</p>
                         <p>Telephone:</p>
@@ -184,8 +184,8 @@
                         
                       </div>
                 
-                      <div class=' col-lg-6 ' style="padding-top: 3vw" >
-                         <p>(Name):</p>
+              <div class='col-lg-6 col-sm-6' style="padding-top: 3vw; float: right" >
+                          <p>(Name):</p>
                         <p>(Company):</p>
                         <p>(Telephone):</p>
                       </div>
@@ -199,14 +199,60 @@
 
         <!-- 2nd -->
 
-         <section style="margin-top: 8vw;"  >
-          <div class='conatiner col-lg-12' style="border: 1px solid black; margin:1vw"   >
+        <section>
+          <div class="container col-lg-12"  >
+            <div style="border: 1px solid black;margin:1vw"   >
+            <div style="border: 1px solid black" class= > <h2 style="text-align: center;" > ORDERS AWAITING PAYMENT </h2></div>
+                <table  class="table table-striped"  style="text-align: center" >
+                    <thead>
+                      <tr>
+                        <th scope="col"  >Order </th>                        
+                        <th scope="col"  >Item</th>
+                        <th scope="col"  >Quantity</th>
+                        <th scope="col"  >Total Order Cost</th>
+                        <th scope="col"  >None</th>
+                        <th scope="col" >None</th>
+                       
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        
+                        <td>dbdfb2jb2343b4b4</td>                      
+                        <td>Mark</td>
+                        <td><button type="button" class="btn btn-danger">Cancel</button></td>
+                        <td><button type="button" class="btn btn-success">Finish Payment</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                       
+                        <td>@mdo</td>
+                        <td>dbdfb2jb2343b4b4</td>
+                        <td>Mark</td>
+                        <td><button type="button" class="btn btn-danger">Cancel</button></td>
+                        <td><button type="button" class="btn btn-success">Finish payment</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- 3rd -->
+
+
+         <section style="margin-top: 8vw; margin: 2vw"  >
+          <div class='conatiner col-lg-12' style="border: 1px solid black; ">
             <div class='col-lg-12'  style="" >
               <div class='col-lg-3'  >
-                <h2 style="font-weight: 700" >Orders</h2>
+                <h2 style="font-weight: 800; font-size: 1.911em; color: #28a745" >ORDERS</h2>
               </div>
               
-              <div class='col-lg-2' style="border: 1px solid black;margin-left: 7vw" >
+              <div class='col-lg-3' style="border: 1px solid black;margin-left: 0vw; text-align: center" >
                   <h5 >Outstanding (33) </h5 >
             
               </div>
