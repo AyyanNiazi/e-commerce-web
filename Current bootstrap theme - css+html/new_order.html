@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Utouch - News</title>
+	<title>New Order </title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -55,7 +55,7 @@
 
 
 <!-- Header -->
-<header class="header header--menu-rounded header--blue-lighteen animated headroom--top headroom--not-bottom" id="site-header">
+<header class="header header--menu-rounded header--blue-lighteen animated headroom--top headroom--not-bottom" id="site-header"  style="top: 0">
 
     <div class="header-lines-decoration">
       <span class="bg-secondary-color"></span>
@@ -114,11 +114,11 @@
                 <li class="scrollable-fix"></li></ul></nav></div>
               </div>
 </header>
-</div><br/><br/><br/><br/>
+</div>
 <!-- main sectyion -->
-<main style="margin-top: 10vw; margin-bottom: 10vw" >
+<main style="margin-top: 13vw; margin-bottom: 4vw" >
     <div class=  >
-       <div class='col-lg-6' >
+       <div class='col-lg-6 col-sm-6' style="float:inherit:left" >
         <div class='my-first' style="border: 1px solid black" > 
             <div class="form-group">
                 <label for="exampleFormControlSelect1" style="margin-left: 2vw" >Choose an amazon Store</label>
@@ -140,8 +140,10 @@
        <!-- 2nd -->
        <div class='my-first col-lg-12 ' style="border: 1px solid black"   > 
           <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
-              <label class="form-check-label" for="inlineRadio1">1</label>
+						<input type="radio" style="width: 50px" href="#first" role="button" aria-expanded="false" aria-controls="collapseExample"
+						name="collapseGroup" data-toggle="collapse" />
+						click for more detail
+						<label class="form-check-label" for="inlineRadio1">1</label>
             </div>
         <div class='col-lg-8' >
             <table id="dtVerticalScrollExample" class="table table-striped table-bordered table-sm">
@@ -182,8 +184,9 @@
        
           <!-- 3rd -->
         <div class='col-lg-12 col-sm-12'  style="border: 1px solid black;margin-top: 4vw;" >
-					 <input type="radio" style="display: inline-block"
-					 data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" /> <span> Type radio </span>
+						<input type="radio" style="width: 50px" href="#second"  aria-expanded="false" aria-controls="second"
+						name="collapseGroup" data-toggle="collapse" />
+						click for more detail
            <br/><br/>
            <div class="card" style="text-align: center; ">
               <img class="card-img-top"  src="img/new_order/u44.png"  />										
@@ -197,13 +200,14 @@
        
        <!-- 4th -->
        <div style='border: 1px solid black; margin-top: 4vw' class='col-lg-12'  >
-					<input type="radio" style="position: fixed; top: 5; left: 5"  
-					data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" /> <span> Type radio </span>
-          <br/><br/>
+					<input type="radio" style="width: 50px" href="#third" role="button" aria-expanded="false" aria-controls="collapseExample"
+					name="collapseGroup" data-toggle="collapse" />
+					click for more detail
+					<br/><br/>
+		
           <div class="form-group">
               <label for="exampleFormControlSelect1" style="margin-left: 2vw" >Choose an amazon Store</label>
               <input type='text' class="form-control" id="exampleFormControlSelect1">
-
             </div>
 
        </div>
@@ -211,7 +215,7 @@
        <!-- submitter -->
 
        <div style="margin-top: 4vw" class='col-lg-12'  >
-          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-info btn-lg btn-block">Info</button>
 
        </div>
 
@@ -220,17 +224,55 @@
       </div>  
 
 
-       <div class='col-lg-6' >
-					<!--for first  -->
-					<div>
-						<div class="collapse" id="#collapseExample">
-							<div class="card card-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+			<div class='col-lg-6 col-sm-6' style="float: right">
+				<!--for first  -->
+				<div>
+					<div class="collapse" id="first">
+						<div class="card card-body" style="margin-top: 45vh" >
+							<div class='col-lg-12' >
+								<div>
+									<input type="radio" style="width: 50px" /> <small> from a curate list</small>
+									<input type="radio" style="width: 50px" /> <small> from a your item</small>
+									<input type="radio" style="width: 50px" /> <small>special  request</small>
+									<br/>
+									<small> Asin# </small><input type="text" />
+								</div>
 							</div>
 						</div>
 					</div>
-       </div>
-      </div>
+					<div class="collapse" id="second">
+						<div class="card card-body" style="margin-top: 75vh" >
+								<div class='col-lg-12' >
+										<div>
+											<input type="radio" style="width: 50px" /> <small> from a curate list</small>
+											<input type="radio" style="width: 50px" /> <small> from a your item</small>
+											<input type="radio" style="width: 50px" /> <small>special  request</small>
+											<br/>
+											<small> Asin# </small><input type="text" />
+										</div>
+									</div>
+						</div>
+					</div>
+					<div class="collapse" id="third">
+						<div class="card card-body" style="margin-top: 100vh" >
+								<div class='container' >
+										<div style=" border: 1px solid black" class='' >
+											<span style=" border: 1px solid black" > 
+											<input type="radio" style="width: 50px;"   /> <small> from a curate list</small></span>
+											<br/>
+											<input type="radio" style="width: 50px" /> <small> from a your item</small>
+											<br/>
+
+											<input type="radio" style="width: 50px" /> <small>special  request</small>
+											<br/>
+											<small> Asin# </small><input type="text" />
+										</div>
+									</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
 </main><br/><br/><br/>
 
 <!-- footer -->
