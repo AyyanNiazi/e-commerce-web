@@ -1,0 +1,60 @@
+<div metal:use-macro="view.layout">
+    <div metal:fill-slot="main_content">
+
+
+        <div class="container albums-page">
+            <div class="row upcoming">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+
+
+                    <h1>CONFIRM YOUR ORDER #[000001]</h1>
+
+                    <div>
+                        You ordered ${item_quantity} of ${item} for ${item_price} per item <br><br>
+                        The url of your order is: ${order_url} <br><br>
+                        The price of your order is: USD ${item_total_cost} <br><br>
+                        Our service fee is: USD ${service_cost}<br><br>
+
+                        The total amount due for this order is: USD ${total_order_price}<br><br>
+                        <br> Promotions going on: {promotion}
+                        <br> Amount minus the promotion:
+
+                        <form action="/links/order_page_test" method="POST">
+                            <input class="btn btn--secondary" style="margin-bottom: 20px; margin-left: 0;" type="submit"
+                                   value="Test Purchase"
+                            ></form>
+                        <!--?<form action="/links/order_page_real" >-->
+                            <!--?<input class="btn btn-primary btn-lg" type="submit"-->
+                                   <!--?value="This will be a real Purchase"-->
+                            <!--?></form>-->
+                        <form><script
+                                    src="" class="stripe-button"
+                                    data-key=""
+                                    data-amount="{int$(total_order_price)}"
+                                    data-currency="USD"
+                                    data-label="Pay for Order of ${total_order_price}"
+                                    data-allow-remember-me="false"
+                                    data-name="Linkgift purchase"
+                                    data-description="Order #: {order}"
+                                    data-image="/static/img/logo.png"
+                                    data-locale="auto"
+                                    data-email="${view.logged_in_user.email if view.is_logged_in else None}"
+                                    data-zip-code="true">
+                            </script></form>
+                    </div>
+                    <br>
+                    <a href="/links/new_linksorder">Back to new order page</a>
+                    <br>
+                                    <!--?src="https://checkout.stripe.com/checkout.js" class="stripe-button"-->
+
+
+                    <br>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
